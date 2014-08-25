@@ -2,6 +2,10 @@
 
 <ul>
   <% @tasks.each do |task| %>
-    <li><a href=<%= "/tasks/#{task[:id]}" %>><%= task.name %></a></li>
+    <li><a href=<%= "/tasks/#{task[:id]}" %>><%= task.name %></a>
+    <button>Mark done</button>
+    </form></li>
   <% end %>
 </ul>
+
+<p><a href="/tasks/new">Create a new task</a></p>
